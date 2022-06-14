@@ -678,8 +678,11 @@
     const hour = now.getHours()
     const minute = now.getMinutes()
     $elTime.innerHTML = `${hour < 10 ? '0' + hour : hour}:${minute < 10 ? '0' + minute : minute}`
+    // 首位是 1 做偏移处理
     if (String(hour).indexOf('1') === 0) {
       $elTime.setAttribute('class', 'time fix')
+    } else {
+      $elTime.setAttribute('class', 'time')
     }
     const calendarJson = calendar.solar2lunar(now)
     $elDate.innerHTML = `${calendarJson.cYear}年${calendarJson.cMonth}月${calendarJson.cDay}日 ${calendarJson.ncWeek}`
