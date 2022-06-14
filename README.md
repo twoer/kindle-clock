@@ -6,7 +6,7 @@
 
 	kindle 浏览器 输入 [http://dev.fluttercn.com/clock/](http://dev.fluttercn.com/clock/) 即可
 	
-	> kindle 主页输入框输入 `-ds` 可以保持屏幕常亮，重启后失效；
+	> kindle 主页输入框输入 `~ds` 可以保持屏幕常亮，重启后失效；
 
 
 
